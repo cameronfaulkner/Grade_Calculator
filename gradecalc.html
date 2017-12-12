@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = 'gradecalc.js'></script>
+    <link rel="stylesheet" href="gradecalc.css">
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+<center>
+<h1>Find the Grade You Need on Your Final</h1>
+ <table id ='values'>Input Your Own Values
+    <tr>
+        <th>Category</th>
+        <th>Grade</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>Homework</td>
+        <td id="1"><input id="hwgrade"input type="text"value='100'> </td>
+        <td><input id="hwweight"input type="text"value="25"></td>
+    </tr>
+    <tr>
+        <td>Participation</td>
+        <td id="2"><input id="partgrade"input type="text" value="100"></td>
+        <td><input id="partweight"input type="text" value="25"></td>
+    </tr>
+    <tr>
+        <td>Tests</td>
+        <td id="3"><input id="testgrade"input type="text" value="100"></td>
+        <td><input id="testweight"input type="text" value="25"></td>
+    </tr>
+</table>
+
+<p>
+    Desired Grade:
+    <input id="desired"input type="text" value="100">
+    Weight of Final:
+    <input id="weight"input type="text" value="25">
+</p>
+    <button onclick="values()">Find Your Final!</button>
+<div id="current grade"></div>
+    <div id="output"></div>
+    <div id="error"></div>
+</center>
+</body>
+</html>
